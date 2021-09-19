@@ -60,13 +60,21 @@ header .container button {
 .banner-principal h1 {
   margin-bottom: 1rem;
 }
+
+.banner-principal p {
+  color: #c4c4c4;
+}
 .section-naped .container {
   display: flex;
   flex-direction: column;
 }
 
 .section-naped .bg-hero-1 {
-  background-image: linear-gradient(#13131f98, #13131f98),
+  background-image: linear-gradient(
+      360deg,
+      #13131f 0%,
+      rgba(19, 19, 31, 0) 100%
+    ),
     url(../image/bg-1.svg);
   background-size: 100%;
   height: 21vh;
@@ -89,7 +97,11 @@ header .container button {
 }
 
 .bg-hero-2 .bg-2 {
-  background-image: linear-gradient(#13131f98, #13131f98),
+  background-image: linear-gradient(
+      360deg,
+      #13131f 0%,
+      rgba(19, 19, 31, 0) 100%
+    ),
     url(../image/bg-2.svg);
   background-size: 100%;
   height: 21vh;
@@ -98,7 +110,11 @@ header .container button {
 }
 
 .bg-hero-2 .bg-3 {
-  background-image: linear-gradient(#13131f98, #13131f98),
+  background-image: linear-gradient(
+      360deg,
+      #13131f 0%,
+      rgba(19, 19, 31, 0) 100%
+    ),
     url(../image/bg-3.svg);
   background-size: 100%;
   height: 21vh;
@@ -108,10 +124,101 @@ header .container button {
 }
 
 @media (min-width: 1330px) {
-  /* .container {
+  .container {
     max-width: 1120px;
     width: 100%;
 
     margin: 0 auto;
-  } */
+  }
+
+  header button {
+    display: none;
+  }
+
+  header .container nav {
+    display: block;
+  }
+
+  header .container nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  header .container nav a + a {
+    margin-left: 3rem;
+  }
+
+  header .container nav a.active {
+    border-bottom: 2px solid #8257e6;
+    padding-bottom: 0.25rem;
+  }
+
+  header .container nav a:last-child {
+    border: 1px solid #fff;
+    padding: 0.25rem 1rem;
+
+    border: 1px solid #8257e6;
+    box-sizing: border-box;
+    border-radius: 30px;
+  }
+
+  /* BANNER-PRINCIPAL */
+  .banner-principal {
+    height: 50vh;
+  }
+
+  .banner-principal h1 {
+    font-size: 3rem;
+    width: 400px;
+  }
+
+  .banner-principal p {
+    width: 500px;
+
+    font-size: 1.2rem;
+  }
+
+  /* NAPED */
+  .section-naped {
+    height: 80vh;
+  }
+
+  .section-naped .container {
+    flex-direction: row;
+  }
+
+  .section-naped .bg-hero-1 {
+    width: 60%;
+    height: 54.8vh;
+
+    background-size: 130%;
+    background-position: center;
+
+    margin-right: 2rem;
+  }
+
+  .section-naped .bg-hero-2 {
+    width: 40%;
+    margin: 0;
+  }
+
+  .bg-hero-top,
+  .bg-hero-bottom {
+    height: 25vh !important;
+  }
+
+  .bg-1 p,
+  .bg-2 p,
+  .bg-3 p {
+    display: block !important;
+  }
+
+  .bg-1,
+  .bg-2,
+  .bg-3 {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+  }
 }
