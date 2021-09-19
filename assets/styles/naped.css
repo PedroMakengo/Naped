@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #13131f;
+  font-family: Poppins;
+
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+a.btn {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+
+  text-decoration: none;
+  background: #8257e6;
+
+  width: 100px;
+  color: #fff;
+}
+
+/* _______________________________________________________________________ */
+
+header {
+  padding: 2rem 0;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .container nav {
+  display: none;
+}
+
+header .container button {
+  border: 0;
+  padding: 0.6rem;
+
+  background: #8257e6;
+  color: #fff;
+}
+
+.banner-principal {
+  padding: 2rem 0;
+}
+
+.banner-principal h1 {
+  margin-bottom: 1rem;
+}
+.section-naped .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-naped .bg-hero-1 {
+  background-image: linear-gradient(#13131f98, #13131f98),
+    url(../image/bg-1.svg);
+  background-size: 100%;
+  height: 21vh;
+
+  padding: 1rem;
+}
+
+.section-naped .bg-hero-1 p,
+.section-naped .bg-hero-2 p {
+  display: none;
+}
+
+.section-naped .bg-hero-2 {
+  margin-top: 2rem;
+}
+
+.bg-hero-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-hero-2 .bg-2 {
+  background-image: linear-gradient(#13131f98, #13131f98),
+    url(../image/bg-2.svg);
+  background-size: 100%;
+  height: 21vh;
+
+  padding: 1rem;
+}
+
+.bg-hero-2 .bg-3 {
+  background-image: linear-gradient(#13131f98, #13131f98),
+    url(../image/bg-3.svg);
+  background-size: 100%;
+  height: 21vh;
+
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@media (min-width: 1330px) {
+  /* .container {
+    max-width: 1120px;
+    width: 100%;
+
+    margin: 0 auto;
+  } */
+}
