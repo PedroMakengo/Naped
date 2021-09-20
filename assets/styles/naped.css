@@ -123,6 +123,189 @@ header .container button {
   margin-top: 2rem;
 }
 
+/* SECTION DESTAQUE */
+.section-destaque {
+  padding: 3rem 0;
+
+  margin-top: 2rem;
+}
+
+.section-destaque .destaque {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-destaque .destaque .card {
+  background-color: #13131f;
+}
+
+.section-destaque .destaque .card .card-img {
+  height: 25vh;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.section-destaque .destaque .card h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.section-destaque .destaque .card + .card {
+  margin-top: 2rem;
+}
+
+.section-destaque .destaque .card .card-content a {
+  display: flex;
+  width: 150px;
+
+  background-color: #8257e6;
+  text-align: center;
+  justify-content: center;
+
+  margin-top: 1rem;
+
+  color: #fff;
+  text-decoration: none;
+}
+
+.section-destaque .destaque .card .card-content small {
+  display: flex;
+  margin: 1rem 0 !important;
+  color: #c4c4c4;
+}
+
+/* FUNDOS */
+.bg-4 {
+  background-position: center;
+  background-image: linear-gradient(
+      360deg,
+      #13131f 0%,
+      rgba(19, 19, 31, 0) 100%
+    ),
+    url(../image/bg-4.svg);
+  background-size: 100%;
+}
+
+.bg-5 {
+  background-position: center;
+  background-image: linear-gradient(
+      360deg,
+      #13131f 0%,
+      rgba(19, 19, 31, 0) 100%
+    ),
+    url(../image/bg-5.svg);
+  background-size: 100%;
+}
+
+.bg-6 {
+  background-position: center;
+  background-image: linear-gradient(
+      360deg,
+      #13131f 0%,
+      rgba(19, 19, 31, 0) 100%
+    ),
+    url(../image/bg-6.svg);
+  background-size: 100%;
+}
+
+.bg-7 {
+  background-position: center;
+  background-image: linear-gradient(
+      360deg,
+      #13131f 0%,
+      rgba(19, 19, 31, 0) 100%
+    ),
+    url(../image/bg-7.svg);
+  background-size: 100%;
+}
+
+.bg-8 {
+  background-position: center;
+  background-image: linear-gradient(
+      360deg,
+      #13131f 0%,
+      rgba(19, 19, 31, 0) 100%
+    ),
+    url(../image/bg-8.svg);
+  background-size: 100%;
+}
+
+/* ASIDE DESTAQUE */
+.aside-destaque {
+  margin-top: 4rem;
+}
+
+.aside-destaque h1 {
+  border-bottom: 2px solid #8257e6;
+  border-bottom-width: 3px;
+  padding-bottom: 0.8rem;
+
+  margin-bottom: 3rem;
+
+  width: 200px;
+}
+
+.aside-destaque .cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.aside-destaque .cards .card {
+  padding: 1rem;
+  height: 30vh;
+}
+
+.aside-destaque .cards .card + .card {
+  margin-top: 2rem;
+}
+
+.bg-9 {
+  background-position: center;
+  background-image: linear-gradient(
+      360deg,
+      #13131f 0%,
+      rgba(19, 19, 31, 0) 100%
+    ),
+    url(../image/bg-9.svg);
+  background-size: 100%;
+
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.bg-10 {
+  background-position: center;
+  background-image: linear-gradient(
+      360deg,
+      #13131f 0%,
+      rgba(19, 19, 31, 0) 100%
+    ),
+    url(../image/bg-10.svg);
+  background-size: 100%;
+
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.bg-11 {
+  background-position: center;
+  background-image: linear-gradient(
+      360deg,
+      #13131f 0%,
+      rgba(19, 19, 31, 0) 100%
+    ),
+    url(../image/bg-11.svg);
+  background-size: 100%;
+
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  flex-direction: column;
+}
 @media (min-width: 1330px) {
   .container {
     max-width: 1120px;
@@ -180,7 +363,7 @@ header .container button {
 
   /* NAPED */
   .section-naped {
-    height: 80vh;
+    height: 55vh;
   }
 
   .section-naped .container {
@@ -188,7 +371,7 @@ header .container button {
   }
 
   .section-naped .bg-hero-1 {
-    width: 60%;
+    width: 70%;
     height: 54.8vh;
 
     background-size: 130%;
@@ -198,7 +381,7 @@ header .container button {
   }
 
   .section-naped .bg-hero-2 {
-    width: 40%;
+    width: 30%;
     margin: 0;
   }
 
@@ -220,5 +403,38 @@ header .container button {
     height: 100%;
     justify-content: space-between;
     flex-direction: column;
+  }
+
+  /* DESTAQUE */
+  .section-destaque .container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .section-destaque .destaque {
+    width: 70%;
+    margin-right: 2rem;
+
+    height: auto;
+    padding-right: 1rem;
+    overflow-y: scroll;
+
+    height: 112vh;
+  }
+
+  /*  */
+
+  .section-destaque .destaque .card {
+    display: flex;
+    padding: 0;
+  }
+
+  .section-destaque .aside-destaque {
+    width: 30%;
+    margin: 0;
+  }
+
+  .section-destaque .aside-destaque .card {
+    width: 100% !important;
   }
 }
