@@ -49,8 +49,10 @@ header .container button {
   border: 0;
   padding: 0.6rem;
 
-  background: #8257e6;
+  background: transparent;
   color: #fff;
+
+  font-size: 1.5rem;
 }
 
 .banner-principal {
@@ -427,6 +429,25 @@ header .container button {
   .section-destaque .destaque .card {
     display: flex;
     padding: 0;
+  }
+
+  .section-destaque .destaque .card {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .section-destaque .destaque .card .card-img {
+    width: 350px;
+    height: 150px;
+    margin-right: 1rem;
+  }
+
+  .section-destaque .destaque .card .card-content h2 {
+    margin-bottom: 0.25rem;
+  }
+
+  .section-destaque .destaque .card .card-content small {
+    margin: 0.25rem !important;
   }
 
   .section-destaque .aside-destaque {
