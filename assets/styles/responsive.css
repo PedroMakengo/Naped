@@ -224,4 +224,9 @@
 
     text-decoration: none;
   }
+
+  .page-not-file .img-content {
+    width: 50%;
+    height: 60%;
+  }
 }
