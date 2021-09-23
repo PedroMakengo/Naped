@@ -281,4 +281,17 @@
   .page-detalhes .noticias {
     margin-top: 5rem;
   }
+
+  /* PAGE ANIMES */
+  .banner-anime {
+    height: 50vh;
+
+    background-image: url(../image/bg-1.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center 30%;
+    margin: 1.5rem 0;
+
+    padding: 1rem;
+  }
 }
